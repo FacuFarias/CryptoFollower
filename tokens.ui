@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-family:century gothic;
+}
+
+QWidget#Dialog{
+background: qlineargradient(spread:pad, x1:1, y1:0.739, x2:1, y2:0.25, stop:0 rgba(37, 83, 134, 255), stop:1 rgba(29, 29, 29, 255))
+
+}
+
+QFrame
+{
+background: #1d1d1d;
+border-radius: 15px;
+}
+
+QToolButton
+{
+background: #2d89ef;
+border-radius: 15px;
+}
+
+QToolButton:hover
+{
+background:  #2b5797;
+border-radius: 15px;
+}
+
+QLabel{
+color:white;
+font-weight:bold;
+
+}
+
+QLineEdit
+{
+background:#1d1d1d;
+border:none;
+border-bottom: 1px solid white;
+color:white;
+}
+
+QPushButton{
+background: #2d89ef;
+color: white;
+border-radius: 5px;
+}
+
+QPushButton:hover{
+background: #2b5797;
+color: white;
+border-radius: 5px;
+font-weight:bold;
+}
+
+QGroupBox{
+color:white;
+
+}
+
+QGroupBox#ref{
+color:white;
+}
+
+QLabel#Titulo
+{
+font-size:20px;
+}
+QTableWidget
+{
+color:white;
+text-align:center;
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>691</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="Titulo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>0</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seguimiento de criptomonedas</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>621</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Notificaciones</string>
+    </property>
+    <widget class="QLabel" name="L_notif">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>13</y>
+       <width>381</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>611</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Token</string>
+    </property>
+    <widget class="QLabel" name="L_token">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Insertar Token:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="B_scrap">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>26</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Scrap</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>24</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="B_fav">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>26</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Favoritos</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="B_detener">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>370</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Detener</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_cerrar">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>370</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cerrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_guardar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>370</y>
+      <width>171</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar punto de referencia</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="T_Tokens">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>621</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Nombre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Simbolo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Precio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Referencia</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Variacion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tiempo</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="L_CellSelected">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="L_CellChanged">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>470</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Facundo Farias</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>B_cerrar</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>364</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>441</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

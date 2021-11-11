@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-family:century gothic;
+}
+
+QWidget#Form{
+background: qlineargradient(spread:pad, x1:1, y1:0.739, x2:1, y2:0.25, stop:0 rgba(37, 83, 134, 255), stop:1 rgba(29, 29, 29, 255))
+
+}
+
+QFrame
+{
+background: #1d1d1d;
+border-radius: 15px;
+}
+
+QToolButton
+{
+background: #2d89ef;
+border-radius: 15px;
+}
+
+QToolButton:hover
+{
+background:  #2b5797;
+border-radius: 15px;
+}
+
+QLabel{
+color:white;
+font-weight:bold;
+
+}
+
+QLineEdit
+{
+background:#1d1d1d;
+border:none;
+border-bottom: 1px solid white;
+color:white;
+}
+
+QPushButton{
+background: #2d89ef;
+color: white;
+border-radius: 5px;
+}
+
+QPushButton:hover{
+background: #2b5797;
+color: white;
+border-radius: 5px;
+font-weight:bold;
+}
+
+QGroupBox{
+color:white;
+
+}
+
+QGroupBox#ref{
+color:white;
+}
+
+QTableWidget
+{
+color:white;
+}
+
+QLabel#Titulo
+{
+font-size:20px;
+}
+
+QLineEdit
+{
+border-radius:20px;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>421</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="B_seleccionar">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>260</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scrapear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_quitar">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>260</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quitar</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>300</y>
+      <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Nuevo token</string>
+    </property>
+    <widget class="QPushButton" name="B_agregar">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>30</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_nuevo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Titulo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tokens Favoritos</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>311</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Token</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Simbolo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Referencia</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="L_row">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>380</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
